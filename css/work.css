@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.bigbox {
+  width: 1000px;
+  margin: 0 auto;
+  padding: 5pxpx;
+}
+
+.header {
+  height: 80px;
+  width: 100%;
+  background-color: white;
+  border-bottom: 1px solid gray;
+  padding: 15px 0;
+  text-align: center;
+}
+span {
+  width: 300px;
+  font-size: 1.2em;
+  font-weight: 700;
+  font-family: fantasy;
+  color: rgb(59, 48, 34);
+}
+
+.nav-box {
+  font-size: 30px;
+  color: black;
+  max-width: 1000px;
+  height: 30px;
+  padding-top: 20px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav {
+  display: flex;
+  font-size: 20px;
+  color: white;
+  width: 650px;
+}
+
+.nav li a {
+  color: black;
+  font-family: fantasy;
+  display: inline-block;
+  padding: 15px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease-in-out;
+}
+.nav li a.active {
+  color: #ff0000;
+  text-decoration: underline;
+}
+.nav li a:hover {
+  color: #ff0000;
+  text-decoration: underline;
+}
+
+.work_container {
+  width: 1000px;
+  box-sizing: border-box;
+  padding: 5px;
+}
+.first {
+  background-color: rgb(249, 247, 245);
+}
+.work_container h2 {
+  font-size: 30px;
+  font-style: inherit;
+  color: rgb(122, 118, 113);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 10px 0px;
+  border: 3px solid rgb(14, 14, 1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.pamirs {
+  font-size: 25px;
+  font-weight: 600;
+  color: red;
+}
+
+.position {
+  font-size: 20px;
+  text-decoration: solid;
+}
+.time {
+  float: right;
+  font-size: 20px;
+}
+
+ul {
+  list-style-type: square;
+}
+
+ul li {
+  border: 1px solid #ccc;
+  display: inline-block;
+  margin: 5px;
+  padding: 10px;
+}
+ul li:hover {
+  background-color: #e0e0e0;
+}
+
+.second {
+  background-color: #f3d7d7;
+}
+.jing {
+  font-size: 25px;
+  font-weight: 600;
+  color: red;
+}
+
+.last {
+  background-color: #f1eff8;
+}
+.total {
+  font-size: 25px;
+  font-weight: 600;
+  color: red;
+}
+
+footer {
+  width: 1000px;
+  margin-top: 10px;
+  background-color: #2c3e50;
+  color: #ecf0f1;
+  padding: 10px 0;
+}

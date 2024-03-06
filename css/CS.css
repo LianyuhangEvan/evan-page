@@ -1,0 +1,196 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+@media (max-width: 768px) {
+  .bigbox {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .nav-box {
+    flex-direction: column;
+    text-align: center;
+    padding-top: 10px;
+  }
+
+  .nav {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav li {
+    padding-left: 0;
+    margin-bottom: 10px;
+  }
+
+  .nav-box .nav {
+    font-size: 18px;
+  }
+
+  .myprojects {
+    width: 90%;
+    margin: 20px auto;
+  }
+
+  .Python {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .game {
+    margin-top: 20px;
+  }
+}
+
+.bigbox {
+  width: 1000px;
+  margin: 0 auto;
+  font-family: sans-serif;
+  background-color: rgb(82, 53, 53);
+  padding: 20px;
+}
+span {
+  width: 300px;
+  color: white;
+  font-size: 1.2em;
+  font-weight: 700;
+  font-family: fantasy;
+}
+
+.header {
+  height: 80px;
+  width: 100%;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.nav-box {
+  font-size: 30px;
+  color: black;
+  max-width: 1200px;
+  height: 40px;
+  padding-top: 20px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav {
+  width: 650px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.nav li {
+  margin: 8px 0;
+  padding: 8px;
+}
+
+.nav li:last-child {
+  margin-right: 0;
+}
+.nav li a {
+  color: #86aacb;
+  font-family: fantasy;
+  display: block;
+  padding: 10px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease-in-out;
+}
+.nav li a:hover {
+  color: #ff0000;
+  text-decoration: underline;
+}
+
+ul {
+  list-style: none;
+}
+
+.nav-box .nav {
+  display: flex;
+  font-size: 20px;
+  color: brown;
+}
+
+.nav-box .nav li {
+  padding-left: 40px;
+  font-family: cursive;
+}
+
+.myprojects {
+  width: 60%;
+  margin: auto;
+}
+
+.Python {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #230202;
+  padding: 10px;
+}
+
+.Python a {
+  color: #4590c2;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.Python a:hover {
+  color: #f9f4f4;
+}
+
+.game {
+  width: 200px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.project {
+  background-color: #f7e1e1;
+  padding: 20px;
+  margin: 20px 0;
+  box-shadow: 0px 0px 10px 0px rgba(239, 228, 228, 0.1);
+}
+
+h2,
+h3 {
+  color: #333;
+}
+
+.date {
+  color: #888;
+  margin-bottom: 10px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.output {
+  margin-top: 10px;
+  line-height: 1.6;
+}
+
+.thesis-title {
+  color: rgb(68, 103, 133);
+  font-family: sans-serif;
+}
+
+footer {
+  width: 100%;
+  margin-top: 10px;
+  background-color: #f1f3f6;
+  color: #000506;
+  padding: 10px 0;
+}

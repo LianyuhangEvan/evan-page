@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: ghostwhite;
+  margin: 0; /* 移除 body 的默认外边距 */
+  font-family: "Arial", sans-serif; /* 设置字体 */
+}
+
+.banner {
+  width: 1000px;
+  font-size: 0px;
+  display: flex; /* 使图片水平摆放 */
+  justify-content: space-around; /* 平均分配空间 */
+  align-items: center; /* 垂直居中对齐 */
+  overflow: hidden; /* 防止内容溢出 */
+  padding: 10px; /* 给容器加上一些内边距 */
+  background-color: white; /* 可选: 给 banner 添加背景色 */
+}
+
+.image-box {
+  flex: 1; /* Take available space */
+  position: relative; /* Relative positioning for hover effect */
+  overflow: hidden; /* Hide overflow for border radius */
+}
+
+.banner-image {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 10px; /* Rounded corners */
+  transition: transform 0.2s, box-shadow 0.2s; /* Smooth transition */
+}
+
+.banner-image:hover {
+  transform: scale(1.05); /* Slightly scale up */
+  box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.2); /* Increased shadow */
+}
+
+.arrow-box {
+  display: flex;
+  align-items: center; /* Center arrow vertically */
+  justify-content: center; /* Center arrow horizontally */
+  padding: 0 20px; /* Padding around arrow */
+}
+
+.arrow {
+  width: 50px; /* Reduced width */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.bigbox {
+  width: 1000px;
+  margin: 0 auto;
+  font-family: "Arial", sans-serif;
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+span {
+  width: 300px;
+  color: white;
+  font-size: 1.2em;
+  font-weight: 700;
+  font-family: fantasy;
+}
+
+.header {
+  height: 80px;
+  width: 100%;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.nav-box {
+  font-size: 30px;
+  color: black;
+  max-width: 1000px;
+  height: 40px;
+  padding-top: 20px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav {
+  width: 650px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.nav li {
+  margin: 8px 0;
+  padding: 8px;
+}
+
+.nav li:last-child {
+  margin-right: 0; /* 保证最后一项无右边距 */
+}
+.nav li a {
+  color: #86aacb;
+  font-family: fantasy;
+  display: block;
+  padding: 10px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease-in-out;
+}
+.nav li a:hover {
+  color: #ff0000;
+  text-decoration: underline;
+}
+
+ul {
+  list-style: none;
+}
+
+.nav-box .nav {
+  display: flex;
+  font-size: 20px;
+  color: brown;
+}
+
+.nav-box .nav li {
+  padding-left: 40px;
+  font-family: cursive;
+}
+
+.mydeucation {
+  width: 50%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.education-background {
+  background: #ffffff;
+  padding: 15px;
+  margin: 20px 0;
+  border: 1px solid #e1e1e1;
+  border-radius: 4px;
+  box-shadow: 2px 2px 12px #aaa;
+}
+
+.education-item {
+  margin-bottom: 20px;
+}
+
+.education-item h3 {
+  color: #333;
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.education-item p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #666;
+}
+
+.header,
+footer {
+  background-color: #2c3e50;
+  color: #ecf0f1;
+}
+
+footer {
+  margin-top: 10px;
+  background-color: #2c3e50;
+  padding: 20px 0;
+}

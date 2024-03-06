@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.bigbox {
+  width: 1000px;
+  margin: 0 auto;
+  background-color: rgb(252, 249, 249);
+  padding: 20px;
+}
+span {
+  width: 300px;
+  color: rgb(59, 46, 46);
+  font-size: 1.2em;
+  font-weight: 700;
+  font-family: fantasy;
+}
+
+.header {
+  height: 80px;
+  width: 100%;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.nav-box {
+  font-size: 30px;
+  color: black;
+  max-width: 1000px;
+  height: 40px;
+  padding-top: 20px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav {
+  width: 1000px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.nav li {
+  margin: 8px 0;
+  padding: 8px;
+}
+
+.nav li:last-child {
+  margin-right: 0;
+}
+.nav li a {
+  color: #095ca9;
+  font-family: fantasy;
+  display: block;
+  padding: 10px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease-in-out;
+}
+.nav li a:hover {
+  color: #ff0000;
+  text-decoration: underline;
+}
+
+ul {
+  list-style: none;
+}
+
+.nav-box .nav {
+  display: flex;
+  font-size: 20px;
+  color: brown;
+}
+
+.bigbox {
+  width: 80%;
+  margin: auto;
+}
+
+.header {
+  background: #50b3a2;
+  color: #ffffff;
+  padding-top: 30px;
+  min-height: 70px;
+  border-bottom: #ffffff 3px solid;
+}
+
+.nav-box {
+  text-align: center;
+  padding: 5px;
+}
+
+.nav {
+  margin: 0;
+  padding: 0;
+}
+
+.nav li {
+  display: inline;
+  margin: 0 15px;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+.messageboard {
+  width: 50%;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0px 0px 5px 0px #ccc;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label,
+input,
+textarea,
+button {
+  margin-bottom: 20px;
+}
+
+input,
+textarea,
+button {
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+button {
+  cursor: pointer;
+  background-color: #5cb85c;
+  color: #fff;
+  border: none;
+}
+
+button:hover {
+  background-color: #4cae4c;
+}
+
+footer {
+  margin-top: 10px;
+  background-color: #2c3e50;
+  color: #ecf0f1;
+  padding: 20px 0;
+}
