@@ -1,30 +1,31 @@
-/* 全局样式 */
+/* 基础样式重置 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f7f7f7;
-  color: #333;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #000; /* 背景色设置为黑色 */
+  color: #33ff33; /* 文本颜色设置为亮绿色 */
 }
 
-a {
-  color: #007bff;
-}
-
-a:hover {
-  text-decoration: none;
-}
-
-/* 容器样式 */
+/* 大容器样式 */
 .bigbox {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #000; /* 保持背景为黑色 */
+  color: #33ff33; /* 元素颜色调整为亮绿色 */
+  box-shadow: 0 2px 4px rgba(0,255,0,0.2); /* 为盒子阴影也使用亮绿色 */
 }
 
-/* 头部样式 */
+/* 导航栏样式 */
 .header {
-  background-color: #333;
-  color: #fff;
-  padding: 20px 0;
+  background-color: #000; /* 背景色设置为黑色 */
+  color: #33ff33;
+  padding: 10px 0;
   text-align: center;
 }
 
@@ -35,123 +36,112 @@ a:hover {
   padding: 0 20px;
 }
 
-.nav-box span {
-  font-size: 1.5em;
-}
-
 .nav {
   list-style: none;
   display: flex;
-  margin: 0;
+  align-items: center;
+  padding-left: 0;
 }
 
 .nav li {
-  margin: 0 10px;
+  margin: 0 15px;
 }
 
-.nav a {
-  font-size: 1em;
-  padding: 10px 15px;
-  border-radius: 4px;
-  transition: background-color 0.3s;
+.nav li a {
+  color: #33ff33; /* 设置链接颜色为亮绿色 */
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
 }
 
-.nav a:hover {
-  background-color: #555;
+.nav li a:hover {
+  color: #ffff00; /* 鼠标悬停时改为黄色 */
 }
 
-/* 主内容区域样式 */
+/* 主要内容样式 */
 .main {
   display: flex;
   justify-content: space-between;
-  padding: 20px 0;
-}
-
-.main_left,
-.main_center,
-.main_right {
-  flex: 1;
-  margin: 0 10px;
-  background-color: #fff;
-  padding: 20px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.main_left h2,
-.main_center h2,
-.main_right h2 {
-  margin-bottom: 20px;
-}
-
-.main_left img {
-  width: 100%;
-  height: auto;
-  border-radius: 50%;
-  margin-bottom: 20px;
-}
-
-/* 我的生活路径样式 */
-.my_life {
-  background-color: #e9ecef;
-  padding: 20px;
-  text-align: center;
-}
-
-.my_life h2 {
-  margin-bottom: 20px;
-}
-
-.mydaily {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-.picture {
-  flex-basis: calc(25% - 20px);
-  margin: 10px;
-  text-align: center;
-}
-
-.picture img,
-.picture video {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
-  transition: transform 0.3s;
-}
-
-.picture:hover img,
-.picture:hover video {
-  transform: scale(1.05);
-}
-
-/* 页脚样式 */
-footer {
-  background-color: #333;
-  color: #fff;
-  text-align: center;
-  padding: 20px 0;
   margin-top: 20px;
 }
 
-/* 媒体查询 */
+.main_left, .main_center, .main_right {
+  flex: 1;
+  margin: 10px;
+  color: #33ff33; /* 保持文字颜色为亮绿色 */
+}
+
+.main_left img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto 20px;
+}
+
+.content-box {
+  padding: 20px;
+  background-color: #121212; /* 内容盒子使用稍微亮一点的黑色 */
+  box-shadow: 0 2px 4px rgba(0,255,0,0.2);
+}
+
+/* 响应式调整 */
 @media (max-width: 768px) {
+  .nav-box {
+    flex-direction: column;
+  }
+
+  .nav {
+    flex-direction: column;
+    margin-top: 10px;
+  }
+
+  .nav li {
+    margin: 5px 0;
+  }
+
   .main {
     flex-direction: column;
   }
 
-  .main_left,
-  .main_center,
-  .main_right {
-    margin: 0 0 20px 0;
+  .bigbox {
+    margin: 10px;
   }
+}
+.my_life {
+  background-color: #121212; /* 调整为深色背景以符合整体风格 */
+  padding: 20px;
+  color: #33ff33; /* 保持文本颜色为亮绿色 */
+}
 
-  .mydaily {
-    flex-direction: column;
-  }
+.mydaily {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px; /* 根据需要调整间隙 */
+}
 
+.picture {
+  width: calc(50% - 10px); /* 减去gap的一半，确保两列布局 */
+  text-align: center; /* 确保文本居中 */
+}
+
+.picture img,
+.picture video {
+  width: 100%; /* 确保媒体内容填满容器 */
+  height: auto; /* 保持原始宽高比 */
+  border-radius: 8px; /* 可选，为图片或视频添加圆角 */
+}
+
+@media (max-width: 768px) {
   .picture {
-    flex-basis: auto;
+    width: 100%; /* 在小屏幕设备上使用100%宽度 */
   }
+}
+
+/* 页脚样式 */
+footer {
+  background-color: #000; /* 背景色设置为黑色 */
+  color: #33ff33; /* 文本颜色设置为亮绿色 */
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
 }
