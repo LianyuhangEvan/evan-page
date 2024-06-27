@@ -7,28 +7,29 @@
 
 body {
   font-family: 'Open Sans', sans-serif;
-  background-color: #000;
-  color: #33ff33;
+  background-color: #f0f0f0; /* 背景色设置为浅灰色 */
+  color: #333; /* 文本颜色设置为深灰色 */
 }
 
 .bigbox {
   max-width: 1000px;
   margin: 20px auto;
   padding: 20px;
-  background-color: #121212;
-  color: #33ff33;
-  box-shadow: 0 2px 4px rgba(0,255,0,0.2);
+  background-color: #ffffff; /* 背景色设置为白色 */
+  color: #333; /* 元素颜色调整为深灰色 */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 为盒子阴影使用淡灰色 */
 }
 
 .header, footer {
-  background-color: #000;
-  color: #33ff33;
+  background-color: #ffffff; /* 背景色设置为白色 */
+  color: #333; /* 文本颜色设置为深灰色 */
   text-align: center;
   padding: 10px 0;
+  border-bottom: 1px solid #e0e0e0; /* 增加底部边框 */
 }
 
 .nav-box span, .nav li a {
-  color: #33ff33;
+  color: #333;
 }
 
 .nav {
@@ -44,11 +45,11 @@ body {
 
 .nav li a {
   text-decoration: none;
-  color: #33ff33;
+  color: #333;
 }
 
 .nav li a:hover {
-  color: #ffff00;
+  color: #007bff; /* 鼠标悬停时改为蓝色 */
 }
 
 .banner {
@@ -64,7 +65,7 @@ body {
 }
 
 .myeducation {
-  background-color: #121212;
+  background-color: #f9f9f9; /* 背景色设置为浅灰色 */
   padding: 20px;
 }
 
@@ -83,14 +84,14 @@ body {
 
 @media (max-width: 768px) {
   .nav {
-      flex-direction: column;
+    flex-direction: column;
   }
 
   .banner-image {
-      width: 100%; /* 移动视图下调整为全宽 */
+    width: 100%; /* 移动视图下调整为全宽 */
   }
 
   .education-background {
-      flex-direction: column;
+    flex-direction: column;
   }
 }

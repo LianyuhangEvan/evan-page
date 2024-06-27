@@ -7,8 +7,8 @@
 
 body {
   font-family: 'Open Sans', sans-serif;
-  background-color: #000; /* 背景色设置为黑色 */
-  color: #33ff33; /* 文本颜色设置为亮绿色 */
+  background-color: #f0f0f0; /* 背景色设置为浅灰色 */
+  color: #333; /* 文本颜色设置为深灰色 */
 }
 
 /* 大容器样式 */
@@ -16,17 +16,18 @@ body {
   max-width: 1000px;
   margin: 20px auto;
   padding: 20px;
-  background-color: #000; /* 保持背景为黑色 */
-  color: #33ff33; /* 元素颜色调整为亮绿色 */
-  box-shadow: 0 2px 4px rgba(0,255,0,0.2); /* 为盒子阴影也使用亮绿色 */
+  background-color: #ffffff; /* 背景色设置为白色 */
+  color: #333; /* 元素颜色调整为深灰色 */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 为盒子阴影使用淡灰色 */
 }
 
 /* 导航栏样式 */
 .header {
-  background-color: #000; /* 背景色设置为黑色 */
-  color: #33ff33;
+  background-color: #ffffff; /* 背景色设置为白色 */
+  color: #333;
   padding: 10px 0;
   text-align: center;
+  border-bottom: 1px solid #e0e0e0; /* 增加底部边框 */
 }
 
 .nav-box {
@@ -48,13 +49,13 @@ body {
 }
 
 .nav li a {
-  color: #33ff33; /* 设置链接颜色为亮绿色 */
+  color: #333; /* 设置链接颜色为深灰色 */
   text-decoration: none;
   transition: color 0.3s ease-in-out;
 }
 
 .nav li a:hover {
-  color: #ffff00; /* 鼠标悬停时改为黄色 */
+  color: #007bff; /* 鼠标悬停时改为蓝色 */
 }
 
 /* 主要内容样式 */
@@ -67,7 +68,7 @@ body {
 .main_left, .main_center, .main_right {
   flex: 1;
   margin: 10px;
-  color: #33ff33; /* 保持文字颜色为亮绿色 */
+  color: #333; /* 保持文字颜色为深灰色 */
 }
 
 .main_left img {
@@ -79,8 +80,8 @@ body {
 
 .content-box {
   padding: 20px;
-  background-color: #121212; /* 内容盒子使用稍微亮一点的黑色 */
-  box-shadow: 0 2px 4px rgba(0,255,0,0.2);
+  background-color: #f9f9f9; /* 内容盒子使用浅灰色 */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 /* 响应式调整 */
@@ -106,10 +107,11 @@ body {
     margin: 10px;
   }
 }
+
 .my_life {
-  background-color: #121212; /* 调整为深色背景以符合整体风格 */
+  background-color: #f9f9f9; /* 调整为浅灰色背景 */
   padding: 20px;
-  color: #33ff33; /* 保持文本颜色为亮绿色 */
+  color: #333; /* 保持文本颜色为深灰色 */
 }
 
 .mydaily {
@@ -139,9 +141,10 @@ body {
 
 /* 页脚样式 */
 footer {
-  background-color: #000; /* 背景色设置为黑色 */
-  color: #33ff33; /* 文本颜色设置为亮绿色 */
+  background-color: #ffffff; /* 背景色设置为白色 */
+  color: #333; /* 文本颜色设置为深灰色 */
   text-align: center;
   padding: 10px;
   margin-top: 20px;
+  border-top: 1px solid #e0e0e0; /* 增加顶部边框 */
 }
