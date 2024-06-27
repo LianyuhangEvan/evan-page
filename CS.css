@@ -1,26 +1,42 @@
 /* 基础样式 */
 body {
-  font-family: 'Open Sans', sans-serif;
-  background: #121212; /* 提供深色背景 */
-  color: #33ff33;
+  font-family: 'Roboto', sans-serif;
+  background: #f0f0f0;
+  color: #333;
   margin: 0;
   padding: 20px;
 }
 
 .bigbox {
-  max-width: 800px;
+  max-width: 1000px;
   margin: auto;
-  background-color: #000;
+  background-color: #ffffff;
   border-radius: 8px;
   overflow: hidden;
-  box-shadow: 0px 0px 20px rgba(0, 255, 0, 0.7);
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .header {
-  background-color: #222;
+  background-color: #007bff;
   padding: 20px 0;
-  color: #33ff33;
+  color: #ffffff;
   text-align: center;
+}
+
+.nav-box span {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  display: inline-block;
 }
 
 .nav {
@@ -32,7 +48,7 @@ body {
 }
 
 .nav a {
-  color: #33ff33;
+  color: #ffffff;
   text-decoration: none;
   padding: 5px 10px;
   border-radius: 5px;
@@ -40,64 +56,68 @@ body {
 }
 
 .nav a:hover, .nav a.active {
-  background-color: #33ff33;
-  color: #000;
+  background-color: #0056b3;
+  color: #ffffff;
 }
 
 /* 项目经历卡片样式 */
-.myprojects .project, .Python {
-  background: linear-gradient(145deg, #1c1c1c, #0a0a0a);
+.myprojects .project {
+  background: #f9f9f9;
   padding: 20px;
   margin: 20px 0;
   border-radius: 10px;
-  box-shadow: 0px 0px 15px rgba(0, 255, 0, 0.6);
-  transition: transform 0.2s ease;
-  
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.myprojects .project:hover, .Python:hover {
+.myprojects .project:hover {
   transform: scale(1.05);
-  box-shadow: 0px 0px 25px rgba(0, 255, 0, 0.8);
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
 }
 
-.game, .company_logo {
-  width: 100px;
-  height: auto;
-  border-radius: 50%;
-  float: left;
-  margin-right: 20px;
+.python a {
+  display: block;
+  padding: 20px;
+  background-color: #007bff;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 10px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.python a:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
 }
 
 /* 文本样式 */
 h2, h3 {
-  color: #33ff33;
+  color: #007bff;
 }
 
 .date, .position {
   font-style: italic;
-  color: #bbb;
+  color: #555;
 }
 
 .output, .thesis-title {
-  color: #aaa;
+  color: #777;
 }
 
 footer {
   text-align: center;
   padding: 10px;
   margin-top: 20px;
-  color: #33ff33;
+  color: #555;
 }
 
 /* 媒体查询以改善响应式布局 */
 @media (max-width: 768px) {
   .nav {
-      flex-direction: column;
+    flex-direction: column;
   }
 
-  .game, .company_logo {
-      float: none;
-      display: block;
-      margin: 0 auto 20px;
+  .myprojects .project {
+    margin: 20px 0;
   }
 }
